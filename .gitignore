@@ -1,0 +1,26 @@
+# Compiled Go files
+*.out
+*.a
+*.test
+
+# IntelliJ/GoLand project files
+.idea
+*.iml
+
+# Go dependencies
+vendor/
+
+# Go coverage files
+coverage.out
+
+# Environment file
+.env
+
+# Backup files
+*.bak
+
+# Gin binary
+gin-bin/
+
+# macOS Finder file
+.DS_Store
