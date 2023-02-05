@@ -1,23 +1,26 @@
 package main
 
 import (
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/dto"
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/log"
-	utilctx "SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/util/context"
-	"context"
-	"github.com/google/uuid"
-	"github.com/sirupsen/logrus"
+	"SANDBOX-TASHA-ISSUER-SERVICE-BE/infrastructure"
+	"SANDBOX-TASHA-ISSUER-SERVICE-BE/interfaces"
+	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared"
+	"github.com/go-playground/validator"
 )
 
 func main() {
-	var (
-		l   = logrus.New()
-		ctx = utilctx.SetMandatoryRequest(context.Background(), dto.MandatoryRequestDto{
-			RequestID: uuid.New().String(),
-			Username:  "sandbox",
-		})
-	)
+	sh := shared.Holder{
+		Config:    nil,
+		Echo:      nil,
+		Logger:    nil,
+		Validator: validator.Validate{},
+	}
+	inh := infrastructure.Holder{
+		ExampleController: nil,
+		SharedHolder:      shared.Holder{},
+		InterfaceHolder:   interfaces.Holder{},
+	}
 
-	logger, _ := log.NewLogger(l)
-	logger.Info(ctx, "Listening on port 7001")
+	go inh.ListenHTTP()
+
+	sh.Close()
 }

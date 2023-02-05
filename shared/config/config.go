@@ -13,6 +13,12 @@ type (
 		// - example
 
 		ExampleEnv string `envconfig:"example_env" default:"example_env"`
+
+		// - echo-config-start
+
+		EchoServerPort string `envconfig:"ECHO_SERVER_PORT" default:"9000"`
+
+		// - echo-config-end
 	}
 )
 
