@@ -5,6 +5,6 @@ import (
 	"context"
 )
 
-func (s *ServiceImpl) FindAll(ctx context.Context, request example.ExampleRequestDto) (*example.ExampleResponseDto, error) {
+func (s *service) FindAll(ctx context.Context, request example.ExampleRequestDto) (*example.ExampleResponseDto, error) {
 	return nil, nil
 }

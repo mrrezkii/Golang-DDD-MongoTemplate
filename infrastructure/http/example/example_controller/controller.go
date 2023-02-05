@@ -1,17 +1,17 @@
 package example_controller
 
 import (
-	application "SANDBOX-TASHA-ISSUER-SERVICE-BE/interfaces"
-	"github.com/labstack/echo"
+	"SANDBOX-TASHA-ISSUER-SERVICE-BE/interfaces"
+	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared"
 )
 
 type (
-	Controller interface {
-		FindAll(c echo.Context) error
-	}
-
-	ControllerImpl struct {
-		controller        Controller
-		ApplicationHolder application.Holder
+	Controller struct {
+		SharedHolder    shared.Holder
+		InterfaceHolder interfaces.Holder
 	}
 )
+
+func NewController(sh shared.Holder, ih interfaces.Holder) (*Controller, error) {
+	return &Controller{sh, ih}, nil
+}

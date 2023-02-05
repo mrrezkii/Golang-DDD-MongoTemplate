@@ -2,22 +2,28 @@ package shared
 
 import (
 	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/config"
-	logger "SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/log"
-	"github.com/go-playground/validator"
+	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/log/echo_logger"
+	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/log/logs"
+	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/validator"
 	"github.com/labstack/echo"
+	"go.uber.org/dig"
 	"io"
 	"log"
 )
 
 type (
 	Holder struct {
+		dig.In
+
 		Config *config.EnvConfiguration
 
 		Echo *echo.Echo
 
-		Logger logger.LoggerWithContext
+		EchoLoggerWrapper *echo_logger.LoggerWrapper
 
-		Validator validator.Validate
+		Logger logs.Logger
+
+		Validator validator.Validator
 	}
 )
 
@@ -31,6 +37,11 @@ func (h *Holder) Close() {
 		_ = closer.Close()
 	}
 
+	i = h.EchoLoggerWrapper
+	if closer, ok := i.(io.Closer); ok {
+		_ = closer.Close()
+	}
+
 	i = h.Logger
 	if closer, ok := i.(io.Closer); ok {
 		_ = closer.Close()
@@ -40,4 +51,6 @@ func (h *Holder) Close() {
 	if closer, ok := i.(io.Closer); ok {
 		_ = closer.Close()
 	}
+
+	log.Print("done closing resource")
 }

@@ -6,7 +6,7 @@ import (
 	"github.com/pkg/errors"
 )
 
-func (s *ServiceImpl) FindAll(ctx context.Context, request example.ExampleRequestDto) (*example.ExampleResponseDto, error) {
+func (s *service) FindAll(ctx context.Context, request example.ExampleRequestDto) (*example.ExampleResponseDto, error) {
 	res, err := s.ApplicationHolder.ExampleService.FindAll(ctx, request)
 
 	if err != nil {
