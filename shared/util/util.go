@@ -1,9 +1,9 @@
 package util
 
 import (
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/dto"
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/util/constant"
-	tasha_error "SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/util/error"
+	"GOLANG-DDD-MONGO-TEMPLATE/shared/dto"
+	"GOLANG-DDD-MONGO-TEMPLATE/shared/util/constant"
+	tasha_error "GOLANG-DDD-MONGO-TEMPLATE/shared/util/error"
 	"github.com/labstack/echo"
 	"net/http"
 	"strings"

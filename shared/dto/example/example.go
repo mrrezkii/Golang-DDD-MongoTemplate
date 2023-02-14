@@ -1,6 +1,6 @@
 package example
 
-import "SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/dto"
+import "GOLANG-DDD-MONGO-TEMPLATE/shared/dto"
 
 type (
 	ExampleRequestDto struct {

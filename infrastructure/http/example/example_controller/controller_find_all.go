@@ -1,9 +1,9 @@
 package example_controller
 
 import (
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/dto/example"
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/util"
-	utilctx "SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/util/context"
+	"GOLANG-DDD-MONGO-TEMPLATE/shared/dto/example"
+	"GOLANG-DDD-MONGO-TEMPLATE/shared/util"
+	utilctx "GOLANG-DDD-MONGO-TEMPLATE/shared/util/context"
 	"github.com/labstack/echo"
 )
 

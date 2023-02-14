@@ -1,10 +1,10 @@
 package shared
 
 import (
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/config"
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/log/echo_logger"
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/log/logs"
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/validator"
+	"GOLANG-DDD-MONGO-TEMPLATE/shared/config"
+	"GOLANG-DDD-MONGO-TEMPLATE/shared/log/echo_logger"
+	"GOLANG-DDD-MONGO-TEMPLATE/shared/log/logs"
+	"GOLANG-DDD-MONGO-TEMPLATE/shared/validator"
 	"github.com/labstack/echo"
 	"go.uber.org/dig"
 	"io"

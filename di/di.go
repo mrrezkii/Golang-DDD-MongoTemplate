@@ -1,10 +1,10 @@
 package di
 
 import (
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/application"
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/infrastructure"
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/interfaces"
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared"
+	"GOLANG-DDD-MONGO-TEMPLATE/application"
+	"GOLANG-DDD-MONGO-TEMPLATE/infrastructure"
+	"GOLANG-DDD-MONGO-TEMPLATE/interfaces"
+	"GOLANG-DDD-MONGO-TEMPLATE/shared"
 	"github.com/pkg/errors"
 	"go.uber.org/dig"
 )

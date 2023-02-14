@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"github.com/sirupsen/logrus"
 
-	utilctx "SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/util/context"
+	utilctx "GOLANG-DDD-MONGO-TEMPLATE/shared/util/context"
 )
 
 type (

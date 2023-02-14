@@ -1,7 +1,7 @@
 package echo_logger
 
 import (
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/log/logs"
+	"GOLANG-DDD-MONGO-TEMPLATE/shared/log/logs"
 	"github.com/labstack/gommon/log"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"

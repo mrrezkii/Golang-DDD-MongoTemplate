@@ -1,7 +1,7 @@
 package infrastructure
 
 import (
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/infrastructure/http/example/example_controller"
+	"GOLANG-DDD-MONGO-TEMPLATE/infrastructure/http/example/example_controller"
 	"github.com/pkg/errors"
 	"go.uber.org/dig"
 )

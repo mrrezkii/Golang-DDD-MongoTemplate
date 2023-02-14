@@ -1,7 +1,7 @@
 package example
 
 import (
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/dto/example"
+	"GOLANG-DDD-MONGO-TEMPLATE/shared/dto/example"
 	"context"
 )
 

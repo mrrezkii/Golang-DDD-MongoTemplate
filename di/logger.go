@@ -1,8 +1,8 @@
 package di
 
 import (
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/config"
-	logs "SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/log/logs"
+	"GOLANG-DDD-MONGO-TEMPLATE/shared/config"
+	logs "GOLANG-DDD-MONGO-TEMPLATE/shared/log/logs"
 	"github.com/pkg/errors"
 )
 

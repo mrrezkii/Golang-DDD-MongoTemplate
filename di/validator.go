@@ -1,7 +1,7 @@
 package di
 
 import (
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/validator"
+	"GOLANG-DDD-MONGO-TEMPLATE/shared/validator"
 	"github.com/pkg/errors"
 )
 

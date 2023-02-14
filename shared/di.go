@@ -1,7 +1,7 @@
 package shared
 
 import (
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/config"
+	"GOLANG-DDD-MONGO-TEMPLATE/shared/config"
 	"github.com/pkg/errors"
 	"go.uber.org/dig"
 )

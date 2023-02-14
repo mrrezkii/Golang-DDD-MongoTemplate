@@ -1,9 +1,9 @@
 package infrastructure
 
 import (
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/util"
-	utilctx "SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/util/context"
-	tasha_error "SANDBOX-TASHA-ISSUER-SERVICE-BE/shared/util/error"
+	"GOLANG-DDD-MONGO-TEMPLATE/shared/util"
+	utilctx "GOLANG-DDD-MONGO-TEMPLATE/shared/util/context"
+	tasha_error "GOLANG-DDD-MONGO-TEMPLATE/shared/util/error"
 	"github.com/google/uuid"
 	"github.com/labstack/echo"
 	"strings"

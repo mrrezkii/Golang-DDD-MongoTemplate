@@ -1,8 +1,8 @@
 package example_controller
 
 import (
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/interfaces"
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared"
+	"GOLANG-DDD-MONGO-TEMPLATE/interfaces"
+	"GOLANG-DDD-MONGO-TEMPLATE/shared"
 )
 
 type (

@@ -1,7 +1,7 @@
 package interfaces
 
 import (
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/interfaces/example"
+	"GOLANG-DDD-MONGO-TEMPLATE/interfaces/example"
 	"go.uber.org/dig"
 )
 

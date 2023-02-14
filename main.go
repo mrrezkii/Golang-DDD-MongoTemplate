@@ -1,9 +1,9 @@
 package main
 
 import (
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/di"
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/infrastructure"
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared"
+	"GOLANG-DDD-MONGO-TEMPLATE/di"
+	"GOLANG-DDD-MONGO-TEMPLATE/infrastructure"
+	"GOLANG-DDD-MONGO-TEMPLATE/shared"
 	"github.com/urfave/cli"
 	"log"
 	"os"

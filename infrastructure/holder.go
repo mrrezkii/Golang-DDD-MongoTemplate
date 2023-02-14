@@ -1,9 +1,9 @@
 package infrastructure
 
 import (
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/infrastructure/http/example/example_controller"
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/interfaces"
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/shared"
+	"GOLANG-DDD-MONGO-TEMPLATE/infrastructure/http/example/example_controller"
+	"GOLANG-DDD-MONGO-TEMPLATE/interfaces"
+	"GOLANG-DDD-MONGO-TEMPLATE/shared"
 	"fmt"
 	"go.uber.org/dig"
 )

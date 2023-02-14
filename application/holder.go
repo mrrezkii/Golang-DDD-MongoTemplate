@@ -1,7 +1,7 @@
 package application
 
 import (
-	"SANDBOX-TASHA-ISSUER-SERVICE-BE/application/example"
+	"GOLANG-DDD-MONGO-TEMPLATE/application/example"
 	"go.uber.org/dig"
 )
 
